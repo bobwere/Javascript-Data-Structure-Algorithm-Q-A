@@ -7,7 +7,15 @@
 //   reverseInt(500) === 5
 //   reverseInt(-15) === -51
 //   reverseInt(-90) === -9
+/**
+ * 
+ * @param {number} n 
+ * @param {string} str
+ */
+function reverseInt(n) {
+    const reversed = n.toString().split('').reverse().join('');
+    return (parseInt(reversed) * Math.sign(n));
 
-function reverseInt(n) {}
+}
 
 module.exports = reverseInt;
